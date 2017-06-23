@@ -7,6 +7,7 @@
 # you're doing.
 Vagrant.configure("2") do |config|
   config.vm.box = "box-cutter/ubuntu1604"
+  config.vm.network :private_network, ip: '192.168.99.10'
   config.vm.provider "virtualbox" do |virtualbox|
     virtualbox.memory = 1024
     virtualbox.cpus = 2
