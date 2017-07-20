@@ -7,4 +7,4 @@
         name: openjdk-8-jdk
   roles:
     - wtanaka.zookeeper
-    - wtanaka.apache-kafka
+    - { role: 'wtanaka.apache-kafka', kafka_version: "0.11.0.0" }
